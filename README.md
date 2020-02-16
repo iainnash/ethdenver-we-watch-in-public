@@ -16,3 +16,6 @@ Chainlink Contract: https://ropsten.etherscan.io/address/0x7c68a3c9477f9b7bd491f
 The Graph API: https://thegraph.com/explorer/subgraph/iainnash/iotactivity
 
 Website Code:  https://glitch.com/edit/#!/ethdenver-makerspace
+
+
+Teammates: Iain Nash / Evan Trumbull
