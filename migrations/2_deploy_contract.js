@@ -1,5 +1,5 @@
-const GravatarRegistry = artifacts.require('./GravatarRegistry.sol')
+const IOTActivity = artifacts.require("./IOTActivity.sol");
 
 module.exports = async function(deployer) {
-  await deployer.deploy(GravatarRegistry)
-}
+  await deployer.deploy(IOTActivity);
+};

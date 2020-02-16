@@ -2,13 +2,13 @@ specVersion: 0.0.2
 description: IOT Activity
 repository: https://github.com/iainnash/iot-activity
 schema:
-  file: ./schema.graphql
+  file: schema.graphql
 dataSources:
   - kind: ethereum/contract
     name: IOTActivity
     network: ropsten
     source:
-      address: '0x7c68a3c9477f9b7bd491f2c788873cd6aa7630c0'
+      address: "0x7c68a3c9477f9b7bd491f2c788873cd6aa7630c0"
       abi: IOTActivity
     mapping:
       kind: ethereum/events
@@ -18,10 +18,10 @@ dataSources:
         - IOTActivity
       abis:
         - name: IOTActivity
-          file: ./abis/IOTActivity.json
+          file: IOTActivity/abis/IOTActivity.json
       eventHandlers:
         - event: LastPersonsFulfilled(indexed bytes32,indexed uint256)
           handler: handleLastPersonsFulfilled
         - event: LastDevicesFulfilled(indexed bytes32,indexed uint256)
           handler: handleLastDevicesFulfilled
-      file: ./src/mapping.ts
+      file: IOTActivity/IOTActivity.wasm
